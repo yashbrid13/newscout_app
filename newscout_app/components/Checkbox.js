@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { View, ImageBackground, Text, Image } from "react-native";
+import { useEffect, useState } from "react";
+import { View, ImageBackground, Text, Image, TouchableHighlight } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import {StyleSheet} from 'react-native';
 import * as Colors from '../styles/Colors';
@@ -10,20 +10,32 @@ const Checkbox = (props) => {
 
     const [isChecked,setCheck] = useState(false);
 
+    useEffect(()=>{
+      setCheck(!isChecked)
+    },[props.isClicked])
+
+    useEffect(()=>{
+      setCheck(false)
+    },[])
+
     const checkClicked = (fn_props) =>{
         console.log("Checked status",isChecked);
-        props.onClicked();
+        { props.onClicked!=null && props.onClicked()};
         setCheck(!isChecked);
     }
 
     return(
-        <TouchableOpacity onPress={checkClicked}>
-                <ImageBackground source={isChecked?require("../assets/images/checked.png"):require("../assets/images/unchecked.png")} style={[checkBoxStyle.box,props.checkboxStyle]}/>  
-        </TouchableOpacity>
+        <TouchableHighlight style={[styles.container,props.containerStyle]} underlayColor='none' onPress={checkClicked}>
+                <ImageBackground source={isChecked?require("../assets/images/checked.png"):require("../assets/images/unchecked.png")} style={[styles.box,props.checkboxStyle]}/>  
+        </TouchableHighlight>
     );
 }
 
-const checkBoxStyle = StyleSheet.create({
+const styles = StyleSheet.create({
+  container:{
+    borderRadius: moderateScale(5)
+  }
+  ,
     box:{
       backgroundColor: Colors.basePrimaryColor,
       marginHorizontal: horizontalScale(12),

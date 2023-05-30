@@ -7,20 +7,19 @@ import { horizontalScale, moderateScale, verticalScale } from '../styles/Metric'
 const SubmitButton = (props) =>{
 
     return(
-        <TouchableOpacity onPress={props.onClick} style={[submitButtonStyle.button,props.bgStyle]}>
+        <TouchableOpacity onPress={props.onClick} style={[props.bgStyle,styles.button]}>
             <View>
-                    <Text style={[submitButtonStyle.buttonText,props.textStyle]}>{props.text}</Text>
+                <Text style={[props.textStyle,styles.buttonText]}>{props.text}</Text>
             </View>
         </TouchableOpacity>
     );
 }
 
-const submitButtonStyle = StyleSheet.create({
+const styles = StyleSheet.create({
     button:{
         backgroundColor: Colors.basePrimaryColor,
         height: verticalScale(45),
         top: verticalScale(15),
-        margin: moderateScale(12),
         borderRadius: moderateScale(6),
         justifyContent: 'center',
         alignItems: 'center',

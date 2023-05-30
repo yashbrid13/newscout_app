@@ -63,7 +63,7 @@ const SignIn = () =>{
                         <Checkbox  
                             onClicked={changeVisible}
                         />
-                        <Text>Show Password</Text>
+                        <Text style={{color:'black'}}>Show Password</Text>
             </View>
             <SubmitButton text="Continue" onClick={submitCredentials} bgStyle={SignInStyles.buttonBgStyle} buttonText={SignInStyles.buttonText}></SubmitButton>
             <Text style={SignInStyles.forgotPassword} onPress={forgotPassword}>Forgot Password</Text>

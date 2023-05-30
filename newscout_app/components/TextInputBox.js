@@ -22,6 +22,7 @@ const TextInputBox = (props) =>{
             placeholder={inputText==""?props.placeHolderText:inputText}
             value={inputText}
             secureTextEntry={props.hide==null?false:props.hide}
+            placeholderTextColor="black" 
             />
         </View>
     );
@@ -29,6 +30,7 @@ const TextInputBox = (props) =>{
 
 const textInputBoxStyle = StyleSheet.create({
     inputBox: {
+        color: 'black',
         height: verticalScale(50),
         top: verticalScale(5),
         margin: moderateScale(12),
