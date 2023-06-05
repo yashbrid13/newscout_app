@@ -66,7 +66,6 @@ import SimpleMenu from './PopupMenu'
 import PopupMenu from './PopupMenu'
 import SearchResultCard from './SearchResultCard'
 import BottomSheet from './BottomSheet'
-import TempShare from './TempShare'
 import SubmitButton from './SubmitButton'
 import ImageCard from './ImageCard'
 import HomePageCard from './HomePageCard'
@@ -159,7 +158,7 @@ const Tempscreen = (props) => {
 
       {/* <SearchResultCard></SearchResultCard> */}
 
-      <BottomSheet cardComponent={<Text style={{color:'black'}}>This is samosa speaking</Text>}>
+      {/* <BottomSheet cardComponent={<Text style={{color:'black'}}>This is samosa speaking</Text>}>
         {data.map(content => (
         <BookmarkCard
           removeSheet={toggleBottomSheet}
@@ -170,9 +169,8 @@ const Tempscreen = (props) => {
       ))}
       <BookmarkCard id="9" titleText="6 visual design fundamentals that UX designers need to possess in 2023" timeElapsed="17 hours ago" content="When I was studying visual communications design in college this is what I learnt from the course"></BookmarkCard>
       <BookmarkCard id="9" titleText="6 visual design fundamentals that UX designers need to possess in 2023" timeElapsed="17 hours ago" content="When I was studying visual communications design in college this is what I learnt from the course"></BookmarkCard>
-      </BottomSheet>
+      </BottomSheet> */}
 
-      {/* <TempShare></TempShare> */}
       {/* <BottomSheet></BottomSheet> */}
 
        {/* <ImageCard authorText="by Ryan Ya"></ImageCard> */}
@@ -183,15 +181,15 @@ const Tempscreen = (props) => {
       {/* <HomePageCard></HomePageCard>
       <HomePageCard></HomePageCard>
       <HomePageCard></HomePageCard> */}
-      {/* <HomePageCard titleText="Haaland scores a hattrick" blurbText="This is his 6th hattrick this season and he seems to be the next prodigy in the world of football" category="Sports" timeElapsed="7 mins" image={require('../assets/images/pubg.png')}></HomePageCard> */}
+      <HomePageCard titleText="Haaland scores a hattrick" blurbText="This is his 6th hattrick this season and he seems to be the next prodigy in the world of football" category="Sports" timeElapsed="7 mins" image={require('../assets/images/pubg.png')}></HomePageCard>
 
 
        {/* <SignIn></SignIn> */}
     
       {/* <BookmarkCard removeSheet={toggleBottomSheet} titleText="6 visual design fundamentals that UX designers need to possess in 2023" timeElapsed="17 hours ago" content="When I was studying visual communications design in college this is what I learnt from the course"></BookmarkCard>  */}
-      {/* <CheckboxCard></CheckboxCard> */}
-      {/* <CheckboxCard></CheckboxCard> */}
-      {/* <CheckboxCard></CheckboxCard> */}
+      {/* <CheckboxCard></CheckboxCard>
+      <CheckboxCard></CheckboxCard>
+      <CheckboxCard></CheckboxCard> */}
 
       {/* <GuestHomePage></GuestHomePage> */}
       {/* <HorizontalSlidingMenu menuItems={horizontalMenuItems}></HorizontalSlidingMenu> */}
@@ -207,9 +205,9 @@ export default Tempscreen
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    // justifyContent: 'center',
-    // alignContent: 'center',
-    // alignItems: 'center',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'white'
   },
   tempText:{

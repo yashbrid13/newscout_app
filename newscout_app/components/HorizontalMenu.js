@@ -130,10 +130,11 @@ const HorizontalMenu = (props) =>{
         renderItem={({item}) =>{
           return (
           <ScrollableList containerStyle={styles.container}></ScrollableList>
+          // <Text style={{color:'black'}}>THIS IS TEST TEXT</Text>
           );  
       }}
       />
-      {/* <Text style={{color: 'black'}}>TEMP TEXT</Text> */}
+      <Text style={{color: 'black'}}>TEMP TEXT</Text>
     </View>
   );
 }

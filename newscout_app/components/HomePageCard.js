@@ -1,6 +1,6 @@
 // import { StyleSheet, Text, View, Image } from 'react-native'
 // import React from 'react'
-// const SearchResultCard = (props) => {
+// const HomePageCard = (props) => {
 
 //   const cardImage = require("../assets/images/search_result_card.png")
 
@@ -19,7 +19,7 @@
 //   );
 // };
 
-// export default SearchResultCard
+// export default HomePageCard
 
 // const styles = StyleSheet.create({
     
@@ -42,7 +42,7 @@ const Row = (props) => {
     return <View style={props.rowStyle}>{props.children}</View>;
 }
 
-const SearchResultCard = (props) => {
+const HomePageCard = (props) => {
 
   const cardImage = require("../assets/images/search_result_card.png")
 
@@ -79,7 +79,7 @@ const SearchResultCard = (props) => {
   );
 };
 
-export default SearchResultCard
+export default HomePageCard
 
 const styles = StyleSheet.create({
     container:{
