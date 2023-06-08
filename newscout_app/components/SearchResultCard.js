@@ -21,7 +21,7 @@ const SearchResultCard = (props) => {
         </Col>
         <Col numRows={2}>
           <Row rowStyle={styles.title}>
-              <Text style={styles.titleText}>Battlegrounds Mobile India iOS release date</Text>
+              <Text style={styles.titleText}>{props.titleText==null?"Demo Title":props.titleText}</Text>
           </Row>
           <Row rowStyle={styles.timeElapsed}>
               <Text style={styles}>42 mins ago</Text>

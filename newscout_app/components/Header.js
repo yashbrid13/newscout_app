@@ -6,17 +6,17 @@ import { verticalScale, horizontalScale, moderateScale } from '../styles/Metric'
 
 
 
-const Headline = (props) =>{
+const Header = (props) =>{
     return(
-        <View style={[headlineStyle.containerStyle,props.containerStyle]}>
-            <Text style={[headlineStyle.textStyle,props.textStyle]}>
+        <View style={[styles.containerStyle,props.containerStyle]}>
+            <Text style={[styles.textStyle,props.textStyle]}>
                 {props.text==null?"Dummy Text":props.text}
             </Text>
         </View>
     );
 }
 
-const headlineStyle = StyleSheet.create({
+const styles = StyleSheet.create({
     containerStyle: {
       height: verticalScale(45),
       alignItems: 'center'
@@ -28,4 +28,4 @@ const headlineStyle = StyleSheet.create({
     }
   });
 
-export default Headline;
+export default Header;

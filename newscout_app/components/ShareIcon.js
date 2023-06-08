@@ -3,7 +3,7 @@ import { Image, TouchableOpacity, StyleSheet, Share } from 'react-native';
 import { horizontalScale, moderateScale, verticalScale } from '../styles/Metric';
 import { TouchableHighlight } from 'react-native-gesture-handler';
 
-const Bookmark = (props) => {
+const ShareIcon = (props) => {
 
   const handlePress = async () => {
     try {
@@ -30,15 +30,15 @@ const Bookmark = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: moderateScale(1),
+    paddingVertical: moderateScale(5),
   },
   icon: {
-    width: horizontalScale(30),
-    height: verticalScale(30)
+    width: horizontalScale(28),
+    height: verticalScale(28)
   },
 });
 
-export default Bookmark;
+export default ShareIcon;
 
 
 // import { Image, Share, StyleSheet, Text, TouchableHighlight, View} from 'react-native'

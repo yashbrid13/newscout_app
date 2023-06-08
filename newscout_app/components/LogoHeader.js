@@ -4,7 +4,7 @@ import { horizontalScale, moderateScale, verticalScale } from '../styles/Metric'
 
 const LogoHeader = () => {
 
-  const logo = require("../assets/images/newscout_logo_light.png")
+  const logo = props.logoImage!=null ? props.logoImage: require("../assets/images/newscout_logo_light.png");
   const [colorScheme, setColorScheme] = useState('light');
 
   // if (Appearance.getColorScheme() === 'dark') {
@@ -19,6 +19,7 @@ const LogoHeader = () => {
   return (
     <View style={styles.card}>
       <Image style={styles.icon} source={logo}></Image>
+      {props.children}
     </View>
   )
 }

@@ -3,7 +3,7 @@ import TextInputBox from "../components/TextInputBox";
 import SubmitButton from "../components/SubmitButton";
 import { View, Text, Linking} from "react-native";
 import SignInStyles from "../styles/SignInStyle";
-import Headline from "../components/Headline";
+import Header from "../components/Header";
 import TextBox from "../components/TextBox";
 import { basePrimaryColor, extraDark } from "../styles/Colors"; 
 import Checkbox from "../components/Checkbox";
@@ -54,7 +54,7 @@ const SignIn = () =>{
 
     return(
         <View style={SignInStyles.container}>
-            <Headline text="Welcome Back"></Headline>
+            <Header text="Welcome Back"></Header>
             <View style={SignInStyles.inputContainer}>
                 <TextBox text="Sign In to your account to explore the article and news." containerStyle={SignInStyles.textBox}></TextBox>
                 <TextInputBox onChange={emailInput} placeHolderText="Email"></TextInputBox>

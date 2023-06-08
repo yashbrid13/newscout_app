@@ -16,7 +16,7 @@
     1. Props:
         1. Image
         2. Elapsed time
-        3. Headline
+        3. Header
         4. Body Text
         5. Article Link
 2. Modal Card:

@@ -196,6 +196,8 @@ const Tempscreen = (props) => {
       {/* <TextInputBox onChange={emailInput}></TextInputBox> */}
       {/* <BottomNavigationBar activeItem={activeItem} navigationItems={nbar} onItemPress={tempBNFunc}></BottomNavigationBar> */}
       {/* <Bookmark></Bookmark> */}
+
+
     </View>
   );
 }

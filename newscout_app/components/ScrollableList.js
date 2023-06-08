@@ -5,7 +5,7 @@ import { horizontalScale, moderateScale, verticalScale } from '../styles/Metric'
 const data = [];
 const {width, height} = Dimensions.get('screen')
 
-
+// DUMMY LIST FOR DISPLAY IDEALLY SHOULD BE PASSED DOWN FROM THE PROPS
 for (let i = 1; i <= 50; i++) {
   data.push({
     id: String(i),
